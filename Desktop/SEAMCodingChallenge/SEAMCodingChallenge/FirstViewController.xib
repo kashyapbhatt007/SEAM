@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
+            <connections>
+                <outlet property="mainCollectionView" destination="CJk-xg-A8D" id="CSQ-wE-qQk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E79-XD-OO9">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="hA3-ZL-rwg"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="SEAM" id="f8u-C9-pAl"/>
+                    </items>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vr7-0d-9Hk">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="CJk-xg-A8D">
+                            <rect key="frame" x="12" y="0.0" width="390" height="774"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kLl-nY-Edo">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="atU-go-qlc"/>
+                                <outlet property="delegate" destination="-1" id="Z2M-kt-qH6"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CJk-xg-A8D" secondAttribute="trailing" constant="12" id="1yi-5Y-u1n"/>
+                        <constraint firstItem="CJk-xg-A8D" firstAttribute="top" secondItem="Vr7-0d-9Hk" secondAttribute="top" id="3BY-Aw-d5L"/>
+                        <constraint firstAttribute="bottom" secondItem="CJk-xg-A8D" secondAttribute="bottom" id="3m6-ZQ-88A"/>
+                        <constraint firstItem="CJk-xg-A8D" firstAttribute="leading" secondItem="Vr7-0d-9Hk" secondAttribute="leading" constant="12" id="WDl-y2-a1q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="E79-XD-OO9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="YNh-Mp-3fy"/>
+                <constraint firstAttribute="trailing" secondItem="E79-XD-OO9" secondAttribute="trailing" id="iMK-V5-v7D"/>
+                <constraint firstItem="E79-XD-OO9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jFb-7u-Boc"/>
+                <constraint firstItem="Vr7-0d-9Hk" firstAttribute="top" secondItem="E79-XD-OO9" secondAttribute="bottom" id="kMy-ML-5FY"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Vr7-0d-9Hk" secondAttribute="bottom" id="pl9-LW-scN"/>
+                <constraint firstItem="Vr7-0d-9Hk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="qwl-Tg-rsD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vr7-0d-9Hk" secondAttribute="trailing" id="sxB-VU-OGR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
